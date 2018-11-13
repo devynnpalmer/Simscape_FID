@@ -7,6 +7,12 @@ import com.libgdx.game.DrRPG;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		
+		config.width = DrRPG.WIDTH;
+		config.height = DrRPG.HEIGHT;
+		config.resizable = true;
+		
 		new LwjglApplication(new DrRPG(), config);
 	}
 }
+
