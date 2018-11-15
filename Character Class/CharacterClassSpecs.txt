@@ -1,0 +1,10 @@
+Class		NormalDMG	MPDamage	RangeDMG
+
+
+Professor 10 10 10
+
+
+TA 10 5 15
+
+
+Advisor 5 15 10
