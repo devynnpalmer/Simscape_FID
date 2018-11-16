@@ -20,7 +20,7 @@ public class Character {
 	private int magicDMG;
 	private int rangeDMG;
 	
-	CharacterClass Class;
+	CharacterClass Classes;
 	private int classChoice; //0, professor 1, TA  2, Advisor
 	
 
@@ -56,6 +56,8 @@ public class Character {
 	
 	public void configClass()
 	{
+		this.Classes = new CharacterClass(classChoice);
+		Classes.readSpecs(classStats);
 		
 	}
 	
