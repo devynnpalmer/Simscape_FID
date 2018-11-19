@@ -14,6 +14,7 @@ public class Character {
 	
 	private int level;
 	private String name;
+	private String className;
 	
 	
 	private int normalDMG;
@@ -58,7 +59,13 @@ public class Character {
 	{
 		this.Classes = new CharacterClass(classChoice);
 		Classes.readSpecs(classStats);
-		
+		Classes.readInfo(classInfo);
+		this.className = Classes.getClassName();
+		this.normalDMG = Classes.getNormalDMG();
+		this.rangeDMG = Classes.getRangeDMG();
+		this.magicDMG = Classes.getMPDMG();
+		System.out.println(this.className);
+		System.out.println(Classes.getClassInfo());
 	}
 	
 }

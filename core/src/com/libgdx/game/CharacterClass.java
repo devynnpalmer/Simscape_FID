@@ -23,8 +23,8 @@ public class CharacterClass {
 		this.normalDMG = 0;
 		this.rangeDMG = 0;
 		this.MPDMG = 0;
-		this.classSpecs = new ArrayList<>();
-		this.classSpecs = new ArrayList<>();
+		this.classSpecs = new ArrayList<String>();
+		this.classInfo = new ArrayList<String>();
 		this.classChoice = classChoice;
 	}
 	
@@ -61,7 +61,7 @@ public class CharacterClass {
 			System.out.println(e.getMessage());
 			System.exit(0);
 		}
-		
+		sc.close();
 	}
 	
 	/**
@@ -105,6 +105,7 @@ public class CharacterClass {
 				this.MPDMG = Integer.parseInt(temp[2]);
 				this.rangeDMG = Integer.parseInt(temp[3]);
 			}
+			sc.close();
 		}
 		catch (FileNotFoundException e)
 		{
@@ -174,6 +175,14 @@ public class CharacterClass {
 		return classInfo.get(index);
 	}
 	
+	/**
+	 * getClassInfo gets the class information without the index
+	 * @return classInformation
+	 */
+	public String getClassInfo()
+	{
+		return this.classInformation;
+	}
 	
 	/**
 	 * Test class, will delete later
