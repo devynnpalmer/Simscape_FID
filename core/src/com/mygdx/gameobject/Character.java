@@ -1,4 +1,4 @@
-package com.libgdx.game;
+package com.mygdx.gameobject;
 
 public class Character {
 	private static String classStats = System.getProperty("user.dir") + "/SE2018MW_Group4/Character Class/CharacterClassSpecs.txt";

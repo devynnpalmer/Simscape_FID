@@ -1,4 +1,4 @@
-package com.libgdx.game;
+package com.mygdx.gameobject;
 
 import com.badlogic.gdx.math.Rectangle;
 

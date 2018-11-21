@@ -1,4 +1,4 @@
-package com.libgdx.game;
+package com.mygdx.gameobject;
 import java.util.*;
 import java.io.*;
 public class CharacterClass {
