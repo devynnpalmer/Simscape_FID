@@ -35,7 +35,6 @@ public class CharacterLevel {
 			
 			sc = new Scanner (new FileInputStream(LevelMaxStats));
 			sc.nextLine();
-			int index = 0;
 			while (sc.hasNextLine())
 			{
 				this.level.add(sc.nextInt());
