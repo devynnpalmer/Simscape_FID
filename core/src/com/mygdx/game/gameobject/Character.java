@@ -1,9 +1,9 @@
 package com.mygdx.game.gameobject;
 
 public class Character {
-	private static String classStats = System.getProperty("user.dir") + "/SE2018MW_Group4/Character Class/CharacterClassSpecs.txt";
-	private static String classInfo = System.getProperty("user.dir") + "/SE2018MW_Group4/Character Class/CharacterClassInfo.txt";
-	private static String classLevel = System.getProperty("user.dir") + "/SE2018MW_Group4/Character Level/LevelMaxStats.txt";
+	private static String classStats = System.getProperty("user.dir") + "/Character Class/CharacterClassSpecs.txt";
+	private static String classInfo = System.getProperty("user.dir") + "/Character Class/CharacterClassInfo.txt";
+	private static String classLevel = System.getProperty("user.dir") + "/Character Level/LevelMaxStats.txt";
 
 	private int currentMP;
 	private int currentXP;
@@ -51,7 +51,7 @@ public class Character {
 	
 	/**
 	 * getName returns the character's name, default is "Dr. Eddy"
-	 * @return
+	 * @return name
 	 */
 	public String getName()
 	{
@@ -90,7 +90,7 @@ public class Character {
 	 */
 	public boolean isLevelUp()
 	{
-		if (this.currentXP == Level.getLevelMaxMP(Level.getCurrentLevel()))
+		if (this.currentXP == Level.getLevelMaxXP(Level.getCurrentLevel()))
 		{
 			this.currentXP = 0;
 			Level.levelUp();

@@ -68,6 +68,14 @@ public class CharacterLevel {
 	{
 		return this.currentLevel;
 	}
+
+	/**
+	 * setCurrentLevel sets the level for a character
+	 */
+	public void setCurrentLevel(int currentLevel)
+	{
+		this.currentLevel = currentLevel;
+	}
 	
 	/**
 	 * resetLevel resets the level to 0
