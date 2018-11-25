@@ -1,9 +1,7 @@
 package com.mygdx.game.screens;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 
 import com.mygdx.game.DrRPG;
@@ -67,7 +65,10 @@ public class MainMenu implements Screen{
 			Gdx.app.exit();
 		}
 		game.batch.draw(settingsButton, 1000, 640, BUTTON_WIDTH, BUTTON_HEIGHT);
-		
+		if(Gdx.input.getX() < 1000 +  BUTTON_WIDTH && Gdx.input.getX() > 1000 && DrRPG.HEIGHT - Gdx.input.getY() < 640 + BUTTON_HEIGHT && DrRPG.HEIGHT - Gdx.input.getY() > 640 && Gdx.input.isTouched() ) {
+			this.dispose();
+			game.setScreen(new SettingsMenuOne(game));
+		}
 		
 		
 		
